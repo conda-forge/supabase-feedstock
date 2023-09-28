@@ -21,12 +21,12 @@ requirements:
     - poetry
   run:
     - python >=3.8
-    - postgrest >=0.10.6
+    - postgrest >=0.10.8,<0.12.0
     - realtime >=1.0.0
-    - gotrue >=1.0.0
-    - httpx >=0.23.0
-    - storage3 >=0.5.2
-    - supafunc >=0.2.2
+    - gotrue >=1.0.4
+    - httpx >=0.24.0
+    - storage3 >=0.5.3,<0.7
+    - supafunc >=0.2.3
     - python-semantic-release
 
 test:
