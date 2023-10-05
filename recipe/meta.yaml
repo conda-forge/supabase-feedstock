@@ -1,5 +1,5 @@
 {% set name = "supabase" %}
-{% set version = "1.1.1" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 06499b97c05fc2f2c42aab05e2ccd3f34aca2ee573ed82f1b750f59099d0a574
+  sha256: 2597ef8ec6af973b9c9e94849204f43f47bb5f46d8c65a0c7a6bdf95ad018704
 
 build:
   number: 0
@@ -18,7 +18,7 @@ requirements:
   host:
     - python >=3.8
     - pip
-    - poetry
+    - poetry <1.6
   run:
     - python >=3.8
     - postgrest >=0.10.8,<0.12
