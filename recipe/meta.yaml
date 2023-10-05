@@ -18,7 +18,7 @@ requirements:
   host:
     - python >=3.8
     - pip
-    - poetry
+    - poetry <1.6
   run:
     - python >=3.8
     - postgrest >=0.10.8,<0.12
