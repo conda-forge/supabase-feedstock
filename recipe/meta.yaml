@@ -29,12 +29,12 @@ requirements:
     - supafunc >=0.3.1,<0.5.0
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - supabase
-  requires:
-     - pip
-   commands:
-     - pip check
 
 about:
   home: https://github.com/supabase-community/supabase-py
