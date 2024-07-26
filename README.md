@@ -3,7 +3,7 @@ About supabase-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/supabase-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/supabase-community/supabase-py
+Home: https://github.com/supabase/supabase-py
 
 Package license: MIT
 
