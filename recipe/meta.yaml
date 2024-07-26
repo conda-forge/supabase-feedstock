@@ -37,7 +37,7 @@ test:
     - supabase
 
 about:
-  home: https://github.com/supabase-community/supabase-py
+  home: https://github.com/supabase/supabase-py
   license: MIT
   license_family: MIT
   license_file: LICENSE
