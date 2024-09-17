@@ -10,7 +10,7 @@ source:
   sha256: 5a979c7711b3c5ce688514fa0afc015780522569494e1a9a9d25d03b7c3d654b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps
 
@@ -37,7 +37,7 @@ test:
     - supabase
 
 about:
-  home: https://github.com/supabase-community/supabase-py
+  home: https://github.com/supabase/supabase-py
   license: MIT
   license_family: MIT
   license_file: LICENSE
