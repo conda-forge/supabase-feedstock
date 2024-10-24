@@ -1,5 +1,5 @@
 {% set name = "supabase" %}
-{% set version = "2.9.0" %}
+{% set version = "2.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d94c0ee491fe0d137387bd860071fee97cb01f32a1c1485266804783b14c1c32
+  sha256: 51fce39c9eb50573126dabb342541ec5e1f13e7476938768f4b0ccfdb8c522cd
 
 build:
   number: 0
@@ -25,7 +25,7 @@ requirements:
     - python >=3.8.0,<4.0.0
     - postgrest >=0.17.0,<0.18.0
     - realtime >=2.0.0,<3.0.0
-    - gotrue >=2.7.0,<3.0.0
+    - gotrue >=2.9.0,<3.0.0
     - httpx >=0.26,<0.28
     - storage3 >=0.8.0,<0.9.0
     - supafunc >=0.6.0,<0.7.0
