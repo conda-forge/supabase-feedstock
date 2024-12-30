@@ -16,13 +16,13 @@ build:
 
 requirements:
   host:
-    - python >=3.8,<4.0
+    - python {{ python_min }}
     - poetry-core >=1.0.0
     - pip
   run:
     - typing_extensions >=4.12.2,<5.0.0
     - typing-extensions >=4.12.2,<5.0.0
-    - python >=3.8.0,<4.0.0
+    - python >={{ python_min }}
     - postgrest >=0.19.0,<0.20.0
     - realtime >=2.0.0,<3.0.0
     - gotrue >=2.11.0,<3.0.0
@@ -32,6 +32,7 @@ requirements:
 
 test:
   requires:
+    - python {{ python_min }}
     - pip
   commands:
     - pip check
