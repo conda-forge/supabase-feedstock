@@ -1,5 +1,5 @@
 {% set name = "supabase" %}
-{% set version = "2.14.0" %}
+{% set version = "2.15.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fd5919ceff91c61b6be05fa8c05b0d7329218598cc05edbdacc141c0c808183c
+  sha256: 2e66289ad74ae9c4cb04a69f9de00cd2ce880cd890de23269a40ac5b69151d26
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - typing_extensions >=4.12.2,<5.0.0
     - typing-extensions >=4.12.2,<5.0.0
     - python >={{ python_min }},<4.0.0
-    - postgrest >=0.19.0,<0.20.0
+    - postgrest >0.19,<1.1
     - realtime >=2.4.0,<2.5.0
     - gotrue >=2.11.0,<3.0.0
     - httpx >=0.26,<0.29
