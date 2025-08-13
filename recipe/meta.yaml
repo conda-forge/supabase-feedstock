@@ -1,5 +1,5 @@
 {% set name = "supabase" %}
-{% set version = "2.16.0" %}
+{% set version = "2.18.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 98f3810158012d4ec0e3083f2e5515f5e10b32bd71e7d458662140e963c1d164
+  sha256: 205787b1fbb43d6bc997c06fe3a56137336d885a1b56ec10f0012f2a2905285d
 
 build:
   number: 0
@@ -20,14 +20,16 @@ requirements:
     - poetry-core >=1.0.0
     - pip
   run:
+    - supabase-auth ==2.12.3
+    - supabase-functions ==0.10.1
     - typing_extensions >=4.12.2,<5.0.0
     - typing-extensions >=4.12.2,<5.0.0
     - python >={{ python_min }},<4.0.0
-    - postgrest >0.19,<1.2
-    - realtime >=2.4.0,<2.6.0
+    - postgrest ==1.1.1
+    - realtime ==2.7.0
     - gotrue >=2.11.0,<3.0.0
     - httpx >=0.26,<0.29
-    - storage3 >=0.10,<0.13
+    - storage3 ==0.12.1
     - supafunc >=0.9,<0.11
 
 test:
