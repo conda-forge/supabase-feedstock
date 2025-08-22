@@ -20,6 +20,7 @@ requirements:
     - python {{ python_min }}
     - poetry-core >=1.0.0
     - pip
+    - uv-build
   run:
     - supabase-auth ==2.12.3
     - supabase-functions ==0.10.1
