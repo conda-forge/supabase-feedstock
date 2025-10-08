@@ -1,5 +1,5 @@
 {% set name = "supabase" %}
-{% set version = "2.21.1" %}
+{% set version = "2.22.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e38993df74a7d38a3660c3400b40af4fa3018f97c53ddc070836d2eab856b70f
+  sha256: c2dda9cc712db69ab4f690092581cff0b8978c268f782a3c16663c9ff0094473
 
 build:
   number: 0
