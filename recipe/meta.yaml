@@ -1,5 +1,5 @@
 {% set name = "supabase" %}
-{% set version = "2.22.2" %}
+{% set version = "2.22.4" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d9a163b73a97f737b5b16496ccd4735c2d1fd7ed1bea390a86490f6b3b416c21
+  sha256: ba398e9c506c60f531a09f0a9573abff9dcd5d85b97386a00ca41dceb1bc1424
 
 build:
   number: 0
@@ -22,16 +22,16 @@ requirements:
     - pip
     - uv-build
   run:
-    - supabase-auth
-    - supabase-functions
+    - supabase-auth ==2.22.4
+    - supabase-functions ==2.22.4
     - typing_extensions >=4.12.2,<5.0.0
     - typing-extensions >=4.12.2,<5.0.0
     - python >={{ python_min }},<4.0.0
-    - postgrest
-    - realtime
+    - postgrest ==2.22.4
+    - realtime ==2.22.4
     - gotrue >=2.11.0,<3.0.0
     - httpx >=0.26,<0.29
-    - storage3
+    - storage3 ==2.22.4
     - supafunc >=0.9,<0.11
 
 test:
