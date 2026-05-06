@@ -1,5 +1,5 @@
 {% set name = "supabase" %}
-{% set version = "2.28.3" %}
+{% set version = "2.30.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1200961e46cdec17c7c280a1e09a159544643eada2759591ea69835303a2e1a4
+  sha256: efdba41d474038ed220736ba4e64946df56043057ad785c4c3499d27e459975c
 
 build:
   number: 0
@@ -23,16 +23,16 @@ requirements:
     - uv-build
   run:
     - yarl >=1.22.0
-    - supabase-auth ==2.28.3
-    - supabase-functions ==2.28.3
+    - supabase-auth ==2.30.0
+    - supabase-functions ==2.30.0
     - typing_extensions >=4.12.2,<5.0.0
     - typing-extensions >=4.12.2,<5.0.0
     - python >={{ python_min }},<4.0.0
-    - postgrest ==2.28.3
-    - realtime ==2.28.3
+    - postgrest ==2.30.0
+    - realtime ==2.30.0
     - gotrue >=2.11.0,<3.0.0
     - httpx >=0.26,<0.29
-    - storage3 ==2.28.3
+    - storage3 ==2.30.0
     - supafunc >=0.9,<0.11
 
 test:
