@@ -1,5 +1,5 @@
 {% set name = "supabase" %}
-{% set version = "2.32.0" %}
+{% set version = "2.33.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8272451d1a478972bb5ffa3be013eb1fe62924fb55c30edd6a03cabbce390074
+  sha256: 7834e2b6373773c8105449cec3089a0dc1bc4069505be057a13404cfcbc42f8c
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv --no-deps
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
@@ -21,13 +21,13 @@ requirements:
     - uv-build >=0.8.3,<0.9.0
   run:
     - yarl >=1.22.0
-    - supabase-auth ==2.32.0
-    - supabase-functions ==2.32.0
+    - supabase-auth ==2.33.0
+    - supabase-functions ==2.33.0
     - python >={{ python_min }},<4.0.0
-    - postgrest ==2.32.0
-    - realtime ==2.32.0
+    - postgrest ==2.33.0
+    - realtime ==2.33.0
     - httpx >=0.26,<0.29
-    - storage3 ==2.32.0
+    - storage3 ==2.33.0
 
 test:
   requires:
